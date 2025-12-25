@@ -1,2 +1,21 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+FUNCTION generateSubstrings(inputString)
+    SET result TO empty array
+    SET n TO length of inputString
+
+    IF n equals 0 THEN
+        RETURN result
+
+    FOR i FROM 0 TO n - 1 DO
+        FOR j FROM i + 1 TO n DO
+            
+            SET substring TO slice of inputString from i to j
+            APPEND substring TO result
+            
+        END FOR
+    END FOR
+    RETURN result
+END FUNCTION
+
